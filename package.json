@@ -1,0 +1,18 @@
+{
+  "name": "zarinpal.com",
+  "version": "1.0.0",
+  "description": "this is a exercise project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss" : "node-sass scss/style.scss style/style.css -w"
+  },
+  "keywords": [
+    "zarinpal"
+  ],
+  "author": "pllpezhman",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

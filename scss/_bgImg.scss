@@ -1,0 +1,53 @@
+.fullBg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bgCover{
+    background-size: cover;
+}
+.bgpCenter{
+    background-position: center center;
+}
+.bgpCenterTop{
+    background-position: center top;
+}
+.bgpCenterBottom{
+    background-position: center bottom;
+}
+.bgpLeftCenter{
+    background-position: left center;
+}
+.bgpLeftTop{
+    background-position: left top;
+}
+.bgpLeftBottom{
+    background-position: left bottom;
+}
+.bgpRightCenter{
+    background-position: right center;
+}
+.bgpRightTop{
+    background-position: right top;
+}
+.bgpRightBottom{
+    background-position: right bottom;
+}
+.bgNoRepeat{
+background-repeat: no-repeat;
+}
+.bgRepeat{
+    background-repeat: repeat;
+}
+.bgYRepeat{
+    background-repeat: repeat-y;
+}
+.bgXRepeat{
+    background-repeat: repeat-x;
+}
+.bgFixed{
+    background-attachment: fixed;
+}
+.bgScroll{
+    background-attachment: scroll;
+}

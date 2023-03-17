@@ -1,0 +1,136 @@
+// absolute positions
+.absolute{
+    position: absolute;
+}
+.abCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.abTop{
+    position: absolute;
+    top: 0%;
+}
+.abBottom{
+    position: absolute;
+    bottom: 0;
+}
+.abLeft{
+    position: absolute;
+    left: 0;
+}
+.abRight{
+    position: absolute;
+    right: 0;
+}
+.abCenterTop{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.abCenterBottom{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.abCenterLeft{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}   
+.abCenterRight{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.abTopLeft{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.abTopRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.abBottomLeft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.abBottomRight{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+// fixed positions
+.fixed{
+    position: fixed ;
+}
+.fixCenterTop{ 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fixCenterBottom{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+.fixCenterLeft{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+.fixCenterRight{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)
+}
+.fixTopLeft{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.fixTopRight{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.fixBottomLeft{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.fixBottomRight{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+// position relative
+.relative{
+    position: relative;
+}
+
+.top0{
+    top: 0;
+}
+
+.left0{
+    left: 0;
+}
+
+// position sticky
+// .sticky{
+//     position: sticky;
+// }

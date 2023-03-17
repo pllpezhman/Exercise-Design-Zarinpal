@@ -1,0 +1,27 @@
+// .slide{
+//     background-color: $bgColor;
+//     .slogan{
+//         h1{
+//             a{
+//                 span{
+//                   background-color: red;
+//                   @extend .font20;
+//                 }
+//             }
+//         }
+//     }
+// }
+.slide{
+        background-color: $bgColor;
+        .slideContent{
+            h1{
+                font-size: 10rem; 
+                @include respond(tab){
+                    font-size: 6rem;
+                }
+                @include respond(mob){
+                    font-size: 3rem;
+                }
+            }
+        }
+    }

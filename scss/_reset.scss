@@ -1,0 +1,46 @@
+
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+color: inherit;
+list-style: none;
+font-family: inherit;
+}
+body,html{
+    font-size: 10px;
+    background-color: #fff;
+    letter-spacing: -.5px;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus{
+    border:none;
+    outline: none;
+    background-color:transparent;
+    resize: none;
+}
+// ::-webkit-input-placeholder { 
+//     color:$placeHolderColor;
+//   }
+//   ::-moz-placeholder {
+//     color:$placeHolderColor;
+//   }
+//   :-ms-input-placeholder { 
+//     color:$placeHolderColor;
+//   }
+//   :-moz-placeholder {
+//     color:$placeHolderColor;
+//   }
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+

@@ -1,0 +1,174 @@
+.flex {
+    display: flex;
+}
+
+// flex-direction
+.fdirColumn {
+    flex-direction: column;
+}
+
+.fdirRow {
+    flex-direction: row;
+}
+
+.fdirColumnReverese {
+    flex-direction: column-reverse;
+}
+
+.fdirRowReverse {
+    flex-direction: row-reverse;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrapReverse {
+    flex-wrap: wrap-reverse;
+}
+
+// justify-content
+.jcStart {
+    justify-content: flex-start;
+}
+
+.jcEnd {
+    justify-content: flex-end;
+}
+
+.jcAround {
+    justify-content: space-around;
+}
+
+.jcBetween {
+    justify-content: space-between;
+}
+
+.jcEvenly {
+    justify-content: space-evenly;
+}
+
+.jcCenter {
+    justify-content: center;
+}
+
+// align-items
+.aiStart {
+    align-items: flex-start;
+}
+
+.aiEnd {
+    align-items: flex-end;
+}
+
+.aiSteretch {
+    align-items: stretch;
+}
+
+.aiCenter {
+    align-items: center;
+}
+
+.aiBaseline {
+    align-items: baseline;
+}
+
+// align-content
+.acStart {
+    align-content: flex-start;
+}
+
+.acEnd {
+    align-content: flex-end;
+}
+
+.acCenter {
+    align-content: center;
+}
+
+.acStretch {
+    align-content: stretch;
+}
+
+.acBetween {
+    align-content: space-between;
+}
+
+.acAround {
+    align-content: space-around;
+}
+
+.acEvenly {
+    align-content: space-evenly;
+}
+
+// container
+.row {
+    width: 100%;
+    display: flex;
+}
+.row80{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.fullHeight {
+    height: 100vh;
+}
+
+// base on desktop
+
+@for $i from 1 through 5 {
+    @if($i==1) {
+        .col-1-1 {
+            width: 100%
+        }
+    }
+
+    @for $j from 1 through $i {
+
+        @if($j<$i) {
+            .col-#{$j}-#{$i} {
+                width: (100%/$i)*$j;
+            }
+        }
+
+    }
+
+}
+
+
+$breaks: (980px, tab) (768px, mob);
+    
+@each $break in $breaks {
+
+    @media screen and (max-width:nth($break, 1)) {
+        @for $i from 1 through 5 {
+            @if($i==1) {
+
+                .col-#{nth($break,2)}-1-1 {
+                    width: 100%
+                }
+            }
+
+            @for $j from 1 through $i {
+
+                @if($j<$i) {
+                    .col-#{nth($break,2)}-#{$j}-#{$i} {
+                        width: (100%/$i)*$j;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
