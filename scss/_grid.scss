@@ -143,7 +143,7 @@
 }
 
 
-$breaks: (980px, tab) (768px, mob);
+$breaks: (991px, tab) (768px, mob);
     
 @each $break in $breaks {
 

@@ -5,13 +5,13 @@
 
     @if($device==des){
 
-        @media screen and (min-width:980px){
+        @media screen and (min-width:991px){
             @content;
         }
     }
     @if($device==tab){
 
-        @media screen and (max-width:980px){
+        @media screen and (max-width:991px){
             @content;
         }
     }

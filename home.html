@@ -13,19 +13,23 @@
     <noscript> این صفحه با جاوا اسکریپ پیاده سازی شده است </noscript>
 
     <!-- header -->
-    <header class="row80 jcBetween fixed">
+    <header class="row80 jcBetween aiCenter fixed">
       <!-- logo -->
       <div class="logo">
         <a href="/home.html" title="zarinpal.com">
           <div class="logo-img"></div>
         </a>
       </div>
-      <!-- ham menu -->
-      <div class="btnToggleMobileHamMenu" id="btnToggleMobileHamMenu"></div>
 
       <!-- navigation -->
-      <nav class="flex jcCenter aiCenter">
-        <ul class="mainMenu flex">
+      <nav>
+        <!-- ham menu icon -->
+        <div
+          class="btnToggleMobileHamMenu icon-menu"
+          id="btnToggleMobileHamMenu"
+        ></div>
+        <!-- menu -->
+        <ul class="mainMenu flex jcEnd">
           <li class="product-box more-menu relative">
             محصولات<i class="icon-down-open"></i>
             <div class="productMenu flex absolute" id="productMenu">
@@ -114,11 +118,10 @@
       </nav>
 
       <!--Mobile menu-->
-
       <div class="wrapper"></div>
       <div class="mobile-menu" id="mobileMenu">
         <div class="top">
-          <i class="" id="btnCloseMobileMenu"></i>
+          <i class="icon-cancel" id="btnCloseMobileMenu"></i>
         </div>
 
         <div class="middle">
@@ -129,7 +132,7 @@
             <li><a href="#">سوالات متداول</a></li>
             <li class="productsBTN">
               محصولات
-              <ul class="" id="subProducts">
+              <ul class="productSubMenu" id="subProducts">
                 <li><a href="#">درگاه پرداخت اینترنتی</a></li>
                 <li><a href="#">زرین‌لینک</a></li>
                 <li><a href="#">زرین‌کارت</a></li>
@@ -151,7 +154,383 @@
         </div>
       </div>
     </header>
+    <!-- slide -->
+    <div class="slide row80 relative">
+      <div class="bgimg"></div>
+      <div class="content-container">
+        <div class="head-title">
+          <div class="heading">بیش از ۱۲ سال</div>
+          <div class="heading">انتخاب مطمئنِ کسب و کارهای آنلاین</div>
+        </div>
+        <p class="description">
+          زرین‌پال، اولین پرداخت‌یار پیشگام کشور، با به‌کارگیری سبک و
+          استانداردهای جدید در ارائه‌ی خدمات درگاه پرداخت اینترنتی، سرویس‌های
+          متنوعی در حوزه‌ی پرداخت الکترونیک را برای کسب و کارها ارائه کرده است؛
+          با این هدف که در افزایش سهم تجارت الکترونیکی در تولید ناخالص ملی و کمک
+          به رشد و توسعه‌ی کسب‌وکارها، نقش سازنده‌‌ای ایفا کند.
+        </p>
+        <div class="info-btn">
+          <a class="registerBtn" id="register" href="#"> ثبت‌نام</a>
+          <a class="loginBtn" id="login" href="#">ورود</a>
+        </div>
+      </div>
+      <div class="img-container">
+        <div class="request-money"></div>
+      </div>
+      <div class="go-down" id="btnGoDown">
+        <i class="icon-down-open"></i>
+      </div>
+    </div>
+    <!-- pg -->
+    <div class="row80 section-pg">
+      <div class="img-box col-1-2 col-tab-1-1">
+        <div class="peyment-picture" title="درگاه پرداخت اینترنتی"></div>
+      </div>
+      <div class="content-box col-1-2 col-tab-1-1">
+        <div class="content">
+          <h2 class="top-title">درگاه پرداخت اینترنتی</h2>
+          <div class="header">
+            <h2 class="header-title">مهندسی شده برای رشد و فروش بیش‌تر</h2>
+          </div>
+          <p class="title-describe">
+            <span
+              >درگاه پرداخت زرین‌پال، با اتصالِ همزمان به درگاه‌های متنوع و
+              معتبر بانکی(</span
+            >
+            <span class="roboto-font">PSP</span>
+            <span
+              >ها)،کاربران را به سریع‌ترین و مطمئن‌ترین درگاه بانکی منتقل می‌کند
+              و به واسطه‌ی قابلیت مسیردهی هوشمند، باعث افزایش درصد تراکنش‌های
+              موفق می‌شود.</span
+            >
+          </p>
+          <a
+            class="payment-gateway-btn golden-button button"
+            id="createTerminal"
+            href="#"
+            >ساخت درگاه پرداخت</a
+          >
+          <a class="read-more-btn button" id="moreTerminal" href="#"
+            >بیش‌تر بدانید.
+            <i class="icon-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- social payment -->
+    <div class="row80 social-payment">
+      <div class="contnet-box col-2-5 col-tab-1-1">
+        <h2 class="top-title">زرین‌لینک</h2>
+        <div class="header">
+          <h2 class="header-title">پرداخت در شبکه‌های اجتماعی</h2>
+        </div>
+        <p class="title-describe">
+          زرین‌لینک با مدیریت فرآیند فروش به روشی هوشمندانه و سریع، باعث افزایش
+          فروش محصولات و خدمات، از طریق شبکه‌های اجتماعی یا وب‌سایت می‌شود.
+        </p>
+        <a class="golden-button button" id="createZarinLink" href="https:#">
+          ساخت زرین‌لینک</a
+        >
+        <a class="read-more-btn button" id="moreZarinLink" href="#">
+          بیش‌تر بدانید. <i class="icon-left"></i
+        ></a>
+      </div>
+      <div class="img-box col-3-5 col-tab-1-1">
+        <div
+          class="zarinlink-image"
+          title="درگاه پرداخت شبکه های اجتماعی"
+        ></div>
+      </div>
+    </div>
+    <!-- zarin card -->
+    <div class="row80 zarincard">
+      <div class="img-box col-1-2 col-tab-1-1">
+        <div class="zarincard-image" title="زرین کارت"></div>
+      </div>
+      <div class="content-box col-1-2 col-tab-1-1">
+        <div class="content">
+          <h2 class="top-title">زرین‌کارت</h2>
+          <div class="header">
+            <h2 class="header-title">طلایی‌ترین کارتِ بانکی</h2>
+          </div>
+          <p class="title-describe">
+            زرین‌‌کارت یک کارتِ بانکی عضو شبکه‌‌ی شتاب و متصل به یک حساب بانکی
+            است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار برخوردار
+            است. زرین‌‌کارت این امکان را برای کاربران خود فراهم می‌‌سازد تا از
+            تعرفه‌‌ی کارمزد کم‌‌تر در روزهای عادی و کارمزد رایگان در
+            سه‌‌شنبه‌‌های طلاییِ زرین‌‌پال بهره‌‌مند شوند.
+          </p>
+          <a
+            class="zarin-card-btn golden-button button"
+            id="requestZarinCard"
+            href="#"
+            >درخواست زرین‌‌کارت</a
+          >
+          <a class="read-more-btn button" id="moreZarinCard" href="#"
+            >بیش‌تر بدانید. <i class="icon-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- payout -->
+    <div class="row80 payout">
+      <div class="content-box col-2-5 col-tab-1-1">
+        <h2 class="top-title">تسهیم</h2>
+        <div class="header">
+          <h2 class="header-title">درگاه پرداخت اشتراکی</h2>
+        </div>
+        <p class="title-describe">
+          تسهیم بهترین روش برای مدیریت مالی کسب‌ و کارهای شراکتی است که به
+          واسطه‌ی آن، درآمد حاصل از فروش محصولات یا خدمات، در سهم‌های ثابت یا
+          متغیر میان شرکای تجاری تقسیم شده و به صورت جداگانه به حساب هر شخص
+          واریز می‌‌شود.
+        </p>
+        <a class="payout golden-button button" id="createPayout" href="#"
+          >درخواست فعال‌سازی تسهیم</a
+        >
+        <a class="read-more-btn button" id="morePayout" href="#"
+          >بیش‌تر بدانید. <i class="icon-left"></i
+        ></a>
+      </div>
+      <div class="img-box col-3-5 col-tab-1-1">
+        <div class="payout-picture" title="درگاه پرداخت اشتراکی"></div>
+      </div>
+    </div>
+    <!-- zarin plus -->
+    <div class="row80 zarin-plus">
+      <div class="img-box col-1-2 col-tab-1-1">
+        <div class="zarinplus-picture" title="زرین پلاس"></div>
+      </div>
+      <div class="content-box col-1-2 col-tab-1-1">
+        <div class="content">
+          <h2 class="top-title">زرین‌پلاس</h2>
+          <div class="header">
+            <h2 class="header-title">ابزار هوشمند سوددهی</h2>
+          </div>
+          <p class="title-describe">
+            زرین‌پلاس محصولی از زرین‌پال، فرصتی فراهم کرده است تا کسب و کارها در
+            هر اندازه و دسته‌بندی شغلی، با در دست داشتن ابزاری قدرتمند برای
+            وفادارسازی مشتریان و افزایش فروش محصولات خود، بتوانند کسب و کار خود
+            را به بهترین شکل توسعه و گسترش دهند و جایگاه برترین فروشگاه منطقه را
+            به خود اختصاص دهند.
+          </p>
+          <a class="zarinPlus golden-button button" id="joinZarinPlus" href="#">
+            پیوستن به زرین‌پلاس</a
+          ><a class="read-more-btn button" id="moreZarinPlus" href="#"
+            >بیش‌تر بدانید. <i class="icon-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <!-- section feature -->
+    <section class="row80 section-feature">
+      <div class="read-more-feature col-1-3 col-tab-1-1">
+        <div class="header">
+          <h2 class="header-title">ویژگی‌های درگاه پرداخت زرین‌پال</h2>
+        </div>
+        <p class="title-describe">
+          درگاه پرداخت اینترنتی زرین‌پال، امکان مدیریت تراکنش‌های مالی در بستر
+          وب را به راحتی امکان‌پذیر می‌کند و با پیاده‌سازی و اجرای راه‌کارهای
+          هوشمندانه، باعث افزایش درصد تراکنش‌های موفق و سوددهی بیش‌تر می‌شود.
+        </p>
+      </div>
+      <div class="options col-2-3 col-tab-1-1">
+        <table class="table-box">
+          <tbody>
+            <tr>
+              <td>
+                <div class="boxing">
+                  <span class="verified-icon icon-default"></span>
+                  <span class="sub-title">ضمانتِ پرداخت</span>
+                </div>
+                <div class="pre">
+                  درگاه پرداخت زرین‌پال، تجربه‌ی پرداخت اینترنتی آسان، سریع و
+                  امن را به مشتریان کسب و کارهای آنلاین هدیه می‌دهد.
+                </div>
+              </td>
+              <td>
+                <div class="boxing">
+                  <span class="icons-split icon-default"></span>
+                  <span class="sub-title">مسیردهی هوشمند</span>
+                </div>
+                <div class="pre">
+                  استانداردهای متفاوت زرین‌پال در بازه‌های زمانی مختلف، باعث
+                  می‌شود کاربران به بهترین درگاه پرداخت با بالاترین میزان
+                  تراکنش‌های موفق هدایت شوند.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="boxing">
+                  <span class="icon-default icons-support"></span>
+                  <span class="sub-title">پشتیبانی ۲۴/۷</span>
+                </div>
+                <div class="pre">
+                  هفت روزِ هفته، با پشتیبانی ۲۴ ساعته‌ی زرین‌پال، آماده‌ی
+                  پاسخ‌گویی و راهنمایی به کاربران هستیم.
+                </div>
+              </td>
+              <td>
+                <div class="boxing">
+                  <span class="icon-default icons-support"></span>
+                  <span class="sub-title">امنیتِ پرداخت</span>
+                </div>
+                <div class="pre">
+                  درگاه امن زرین‌پال، ضمانتی برای امنیت اطلاعات بانکی افراد،
+                  هنگام پرداخت‌‌های اینترنتی آن‌هاست.
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- join box -->
+    <div class="join col-1-1">
+      <div class="box">
+        <span>به خانواده‌ی یک میلیونی زرین‌پال بپیوندید.</span>
+        <span class="two">یک ماه رایگان، هدیه‌ی عضویت زرین‌پال به شما </span>
+        <a class="start-btn golden-button button" id="startHome" href="#"
+          >شروع کنید</a
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="support-box row jcBetween aiCenter test">
+        <div class="right">
+          <p class="txt-support">
+            پشتیبانی ۲۴ ساعته، ۷ روز هفته
+            <span class="pipe">|</span>
+            تلفن پشتیبانی پذیرندگان :
+            <span class="phone-number"> ۴۱۲۳۹-۰۲۱</span>
+            <span class="pipe">|</span>
+            تلفن پشتیبانی خریداران :
+            <span class="phone-number"> ۴۵۶۲۸۰۰۰-۰۲۱ </span>
+          </p>
+        </div>
+        <div class="left">
+          <a href="#">
+            <p class="icon-left">درخواست پشتیبانی</p>
+          </a>
+        </div>
+      </div>
+      <!-- middle-footer -->
+      <div class="row middle-footer">
+        <!-- right -->
+        <div class="flex right col-3-5 col-tab-1-1">
+          <!-- item -->
+          <div class="col-1-4 col-tab-1-2">
+            <div class="footer-title">محصولات</div>
+            <ul>
+              <li><a href="#">زرین‌لینک</a></li>
+              <li><a href="#">درگاه پرداخت اینترنتی</a></li>
+              <li><a href="#">زرین‌کارت</a></li>
+              <li><a href="#">تسهیم</a></li>
+              <li><a href="#">عیان</a></li>
+              <li><a href="#">استرداد وجه</a></li>
+              <li><a href="#">تسویه پیش از موعد </a></li>
+              <li><a href="#">تسهیم فردایی</a></li>
+            </ul>
+          </div>
+          <!-- item -->
+          <div class="col-1-4 col-tab-1-2">
+            <div class="footer-title">آشنایی با زرین‌پال</div>
+            <ul>
+              <li><a href="/pricing.html">تعرفه‌ها</a></li>
+              <li><a href="/aboutus.html">درباره ما</a></li>
+              <li><a href="/faq.html">سوالات متداول</a></li>
+              <li><a href="/affiliate.html">همکاری در فروش</a></li>
+            </ul>
+          </div>
+          <!-- item -->
+          <div class="col-1-4 col-tab-1-2">
+            <div class="footer-title">ارتباط‌ بیشتر</div>
+            <ul>
+              <li><a href="#">تماس با ما</a></li>
+              <li><a href="#">قوانین و مقررات</a></li>
+              <li><a href="#">حریم ‌خصوصی</a></li>
+            </ul>
+          </div>
+          <!-- item -->
+          <div class="col-1-4 col-tab-1-2">
+            <div class="footer-title">منابع</div>
+            <ul>
+              <li><a href="#">دریافت شماره شبا</a></li>
+              <li><a href="#">زرین‌بین</a></li>
+              <li><a href="#">توسعه‌دهندگان</a></li>
+              <li><a href="#">وبلاگ</a></li>
+              <li><a href="#">سنجش رضایتمندی</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- left -->
+        <div class="left col-2-5 col-tab-1-1">
+          <div class="social-title">زرین‌پال در شبکه‌های اجتماعی:</div>
+          <div class="social-networks">
+            <a class="icon-link" href="#">
+              <i class="icon instagram" title="instagram"></i>
+            </a>
+            <a class="icon-link" href="#">
+              <i class="icon twitter" title="twitter"></i>
+            </a>
+            <a class="icon-link" href="#">
+              <i class="icon telegram" title="telegram"></i>
+            </a>
+            <a class="icon-link" href="#">
+              <i class="icon linkdin" title="instagram"></i>
+            </a>
+            <a class="icon-link" href="#">
+              <i class="icon aparat" title="aparat"></i>
+            </a>
+          </div>
+          <!--  -->
+          <div class="logo-footer">
+            <a>
+              <img
+                id="4o1tQMcRX45sQDkUnGiC"
+                referrerpolicy="origin"
+                width="78px"
+                height="82px"
+                src="https://Trustseal.eNamad.ir/logo.aspx?id=64418&amp;Code=4o1tQMcRX45sQDkUnGiC"
+                alt="enamad"
+                style="cursor: pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- bottom-footer -->
+      <div class="col-1-1 bottom-footer">
+        <div class="copyright">
+          <span>© ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</span>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
     <script src="./script/home.js"></script>
   </body>
 </html>
+
+<!-- <div class="row">
+  <div class="col-1-2">
+    <div class="boxing">
+      <span class="verifiedIcon icon-default"></span>
+      <span class="sub-title">ضمانتِ پرداخت</span>
+    </div>
+    <div class="pre">
+      درگاه پرداخت زرین‌پال، تجربه‌ی پرداخت اینترنتی آسان، سریع و امن را
+      به مشتریان کسب و کارهای آنلاین هدیه می‌دهد.
+    </div>
+  </div>
+  
+  <div class="boxing col-1-2"></div>
+</div>
+<div class="row">
+  <div class="boxing col-1-2"></div>
+  <div class="boxing col-1-2"></div>
+</div> -->
