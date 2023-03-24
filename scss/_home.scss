@@ -863,37 +863,4 @@ header {
   }
 }
 
-// .footer {
-//   width: 80%;
-//   margin: 0 auto;
-//   .support-box {
-//     background: #fbf6f1;
-//     border-radius: 35px;
-//     margin: 0 0 50px;
-//     padding: 0 30px;
-//     height: 70px;
-//     @include respond(tab) {
-//       flex-wrap: wrap;
-//     }
-//     > li {
-//       padding: 0 10px;
-//       font-size: 2rem;
-//       letter-spacing: -1.5px;
-//       white-space: nowrap;
-//       &:first-child {
-//         border-left: 1px solid #000;
-//       }
-//       &:nth-child(2) {
-//         border-left: 1px solid #000;
-//       }
-//       @media (min-width: 991px) and (max-width: 1200px) {
-//         .support-box > li {
-//           font-size: 14px;
-//         }
-//       }
-//       @include respond(tab) {
-//         font-size: 1.9rem;
-//       }
-//     }
-//   }
-// }
+
